@@ -3,14 +3,16 @@
 <head>
     <div id="preloader">
     <img src="logo.png" alt="Loading Logo" class="loader">
-    </div>
+    </div>  
+
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- For badminton and volleyball logo -->
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aladin&family=Audiowide&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aladin&family=Audiowide&family=Nova+Square&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,39 +21,53 @@
     <style>
         * {
             margin: 0;
-            padding: 0;
+            padding: 0px;
             box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
+            font-family: "Nova Square", sans-serif;
+            
+            
         }
         
         
         h4{
-            font-size: 2.6rem;
+            
+            font-size: 2.7rem;
             
             text-shadow: 0 0 10px #b3ff00;
             margin-bottom: 2rem;
             font-family: "Audiowide", sans-serif;
             font-weight: 400;
-             font-style: normal;
+            font-style: normal;
+            
             
         }
         h5{ 
             font-size: 3.2rem;
             font-family: "Aladin", system-ui;
-            text-shadow: 0 0 10px #c90771;
+            text-shadow: 0 0 15px #9c07c9;
             letter-spacing: 3px;
             font-weight: 400;
             font-style: normal;
             
         }
-        p1{
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 1.5rem;  
-            font-weight: 300;
-            padding:30px;
+
+        p{
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: "Nova Square", sans-serif;
+            padding: 5px;
             text-align: center;
-            
         }
+        p1{
+            text-align: center;
+            font-family: "Nova Square", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.4rem;  
+        }
+        
+        
         
         body {
             background: linear-gradient(-45deg, #142752, #301a4a, #2d436b, #363688);
@@ -157,12 +173,12 @@
         .section-title {
             text-align: center;
             margin-bottom: 40px;
-            font-size: 2.5rem;
+            font-size: 2.6rem;
             text-shadow: 0 0 10px #00f7ff;
             
             font-family: "Audiowide", sans-serif;
             font-weight: 400;
-             font-style: normal;
+            font-style: normal;
         }
 
         .project-grid {
@@ -170,15 +186,26 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 40px;
+            
         }
 
         .project-card {
             background: rgba(255, 255, 255, 0.05);
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 20px;
             border: 1px solid #00f7ff33;
             backdrop-filter: blur(5px);
             transition: 0.3s;
+        }
+        .project-card p{
+            font-size: 1rem;
+            font-family: "Nova Square", sans-serif;
+        }
+        .project-card h1{
+            font-family: "Quantico", sans-serif;
+            text-align: center;
+            text-shadow: 0 0 20px #ec03d9;
+
         }
 
         .project-card:hover {
@@ -187,7 +214,9 @@
         }
 
         .project-btn {
-            display: inline-block;
+            display: flex;
+            justify-content: center;
+            
             padding: 10px 20px;
             margin-top: 15px;
             background: linear-gradient(45deg, #00f7ff, #0066ff);
@@ -195,6 +224,9 @@
             text-decoration: none;
             border-radius: 5px;
             transition: 0.3s;
+            text-align: center;
+            margin-left: 25%;
+            margin-right: 25%;
         }
 
         .project-btn:hover {
@@ -284,11 +316,16 @@
         }
 
         .qualification-card h3 {
+            
+
+            font-family: "Nova Square", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.9rem;  
+            text-align: center;
+            text-shadow: 0 0 20px #00ff62;
             color: #00f7ff;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-            border-bottom: 1px solid #00f7ff33;
-            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .qualification-item {
@@ -296,19 +333,27 @@
         }
 
         .qualification-item h4 {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             margin-bottom: 5px;
             color: #b3ff00;
+            margin-top: 30px;
         }
 
         .qualification-item p {
-            font-size: 1rem;
-            color: #ccc;
+            font-size: 1.2rem;
+            margin: 0;
+            padding: 0px;
+            text-align: left;
+            font-family: "Nova Square", sans-serif;
+            
+            
+        
         }
 
         .qualification-item .date {
             color: #f30876;
             font-style: italic;
+            
         }
 
         .contact {
@@ -385,6 +430,18 @@
         
 
         @media (max-width: 768px ) {
+            
+            .section-title {
+            text-align: center  ;
+            margin-bottom: 40px;
+            font-size: 1.8rem;
+            text-shadow: 0 0 20px #00f7ff;
+            
+            font-family: "Audiowide", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            
+            }
             h4 {
                 font-size: 2rem;
                 line-height: 1.3;
@@ -461,6 +518,24 @@
         }
 
         @media (max-width: 400px) {
+            p1{
+                font-size: 1.2rem;
+                
+            }
+            
+            h4{
+                font-size: 1.9rem;
+            }
+            .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.6rem;
+            text-shadow: 0 0 10px #00f7ff;
+            
+            font-family: "Audiowide", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
             .hero h1 {
                 font-size: 1.8rem;
                 
@@ -669,23 +744,23 @@ footer .copyright i {
         <h2 class="section-title">Web Development Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <h3>Learn 2 Cube</h3>
+                <h1>Learn 2 Cube</h1>
                 <p>An beginner tutorial to solve the 3x3 Rubik's cube (One of my First Project) </p>
                 <a href="https://manascodez.github.io/LearnToCube/" class="project-btn">View Project</a>
             </div>
             <div class="project-card">
-                <h3>Typing Test</h3>
+                <h1>Typing Test</h1>
                 <p>A simple test to check the speed of your Typing</p>
                 <a href="https://manascodez.github.io/TypingTest/" class="project-btn">View Project</a>
             </div>
             <div class="project-card">
-                <h3>Obstacle Dodger</h3>
+                <h1>Obstacle Dodger</h1>
                 <p>A simple 2-D Obstacle dodger game</p>
                 <a href="https://manascodez.github.io/ObstacleDodger/" class="project-btn">View Project</a>
             </div>
 
             <div class="project-card">
-                <h3>Website Creation Guide</h3>
+                <h1>Website Creation Guide</h1>
                 <p>A simple beginners guide towards Web Development</p>
                 <a href="https://manascodez.github.io/Website-Creation-Guide/" class="project-btn">View Project</a>
             </div>
@@ -732,12 +807,12 @@ footer .copyright i {
                 </div>
                 <div class="qualification-item">
                     <h4>Senior Secondary Education</h4>
-                    <p>S.K.D. Academy</p>
+                    <p>S.K.D. Academy
                     <p class="date">Waiting for results</p>
                 </div>
                 <div class="qualification-item">
                     <h4>JEE Mains</h4>
-                    <p>Self Study</p>
+                    <p>Self Study</p2>
                     <p class="date">88.77 %tile</p>
                 </div>
             </div>
