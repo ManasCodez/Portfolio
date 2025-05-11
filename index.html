@@ -634,6 +634,7 @@ footer .footer-links a::after {
     transition: width 0.3s ease;
 }
 
+
 footer .footer-links a:hover::after {
     width: 100%;
 }
@@ -648,6 +649,8 @@ footer .copyright i {
     color: #f30876;
     margin: 0 5px;
 }
+
+
 
 /* Responsive Footer */
 @media (max-width: 768px) {
@@ -664,6 +667,8 @@ footer .copyright i {
         font-size: 1.3rem;
     }
 }
+
+
 
 @media (max-width: 480px) {
     footer .footer-links {
@@ -698,6 +703,7 @@ footer .copyright i {
       width: 120px;
       height: 120px;
       animation: pulseFade 2.5s ease-in-out infinite ;
+      
     }
 
     @keyframes pulseFade {
@@ -740,6 +746,8 @@ footer .copyright i {
         <p1>Turning ideas into digital reality with code and creativity</p1>
     </section>
 
+
+
     <section class="projects" id="projects">
         <h2 class="section-title">Web Development Projects</h2>
         <div class="project-grid">
@@ -766,6 +774,7 @@ footer .copyright i {
             </div>
         </div>
     </section>
+
 
 
     <section class="models" id="models">
@@ -838,6 +847,8 @@ footer .copyright i {
         </div>
     </section>
 
+
+
     <!-- Hobbies Section -->
     <section class="hobbies" id="hobbies">
         <h2 class="section-title">My Hobbies</h2>
@@ -870,7 +881,7 @@ footer .copyright i {
             <div class="hobby-card">
                 <i class="material-icons">sports_volleyball</i>
                 <h3>Volleyball</h3>
-                <p>Mastering quick sets, dumps, and Choreographing the team's attack</p>
+                <p>Mastering quick sets, dumps, and planning the team's attack</p>
             </div>
         </div>
     </section>
@@ -903,6 +914,9 @@ footer .copyright i {
 </footer>
 
     <script>
+
+
+
         // Smooth scrolling with navbar offset
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -919,6 +933,8 @@ footer .copyright i {
         
         
 
+
+
         // Navigation bar background change on scroll
         window.addEventListener('scroll', function() {
             if (window.scrollY > 50) {
@@ -928,10 +944,14 @@ footer .copyright i {
             }
         });
 
+
+
         // Mobile menu toggle
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
         });
+
+
 
         // Close menu when clicking outside on mobile
         document.addEventListener('click', function(event) {
@@ -945,6 +965,8 @@ footer .copyright i {
             }
         });
 
+
+
         // Adjust hero padding based on navbar height
         function adjustHeroPadding() {
             const navbar = document.querySelector('.nav-bar');
@@ -953,6 +975,9 @@ footer .copyright i {
                 hero.style.paddingTop = `${navbar.offsetHeight + 50}px`;
             }
         }
+
+
+
 
         // Run on load and resize
         window.addEventListener('load', adjustHeroPadding);
@@ -968,7 +993,7 @@ footer .copyright i {
       setTimeout(() => {
         preloader.style.display = "none";
         content.style.display = "block";
-      }, 500);
+    }, 500);
     });
 
     
