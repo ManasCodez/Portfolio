@@ -1053,25 +1053,25 @@ footer .copyright i {
 
 
 //for results download
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
     const downloadButtons = document.querySelectorAll('.download-btn');
-    
+
     downloadButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             const fileName = this.getAttribute('data-file');
             downloadResult(fileName);
         });
     });
-    
+
     function downloadResult(fileName) {
-        // Path to your actual files (adjust according to your file structure)
-        const filePath = `results/${fileName}`;
-        
+        // Use the path directly from the data-file attribute
+        const filePath = fileName;
+
         // Create a temporary link element
         const link = document.createElement('a');
         link.href = filePath;
-        link.download = fileName;
-        
+        link.download = fileName.split('/').pop(); // This ensures only the file name is used for download
+
         // Trigger the download
         document.body.appendChild(link);
         link.click();
