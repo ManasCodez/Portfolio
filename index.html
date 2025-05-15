@@ -358,7 +358,7 @@
             font-style: italic;
             text-shadow: 0 0 10px #b642e4;
             font-family: "Nova Square", sans-serif;
-
+            
             
         }
 
@@ -739,6 +739,38 @@ footer .copyright i {
       }
     }
 
+
+
+
+
+
+    .download-btn {
+        
+        border:none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background: linear-gradient(45deg, #00b7ff, #0165fc);
+        color: #ffffff;
+        font-size: 16px;
+        text-shadow: 0 0 10px #b642e4;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: 0.3s;
+        font-weight: bold;
+        
+    
+}
+
+.download-btn:hover {
+    
+    
+    box-shadow:
+    0 0 10px #33ccff,
+    0 0 20px #33ccff,
+    0 0 40px #33ccff,
+    0 0 60px #8a00ff;
+}
+
     
     </style>
 </head>
@@ -831,16 +863,19 @@ footer .copyright i {
                     <h4>Secondary Education</h4>
                     <p>S.K.D. Academy</p>
                     <p class="date">Passed with 91.80%</p>
+                    <button class="download-btn" data-file="results\10_marks.jpg" data-type="image/jpeg">Download Result</button>
                 </div>
                 <div class="qualification-item">
                     <h4>Senior Secondary Education</h4>
                     <p>S.K.D. Academy
                     <p class="date">Passed with 90.60%</p>
+                    <button class="download-btn" data-file="results\12_marks.jpg" data-type="image/jpeg">Download Result</button>
                 </div>
                 <div class="qualification-item">
                     <h4>JEE Mains</h4>
                     <p>Self Study</p2>
                     <p class="date">88.77 %tile</p>
+                    <button class="download-btn" data-file="results\JEE_Main.pdf" data-type="application/pdf">Download Result</button>
                 </div>
             </div>
             
@@ -1015,6 +1050,34 @@ footer .copyright i {
     });
 
     
+
+
+//for results download
+    document.addEventListener('DOMContentLoaded', function() {
+    const downloadButtons = document.querySelectorAll('.download-btn');
+    
+    downloadButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const fileName = this.getAttribute('data-file');
+            downloadResult(fileName);
+        });
+    });
+    
+    function downloadResult(fileName) {
+        // Path to your actual files (adjust according to your file structure)
+        const filePath = `results/${fileName}`;
+        
+        // Create a temporary link element
+        const link = document.createElement('a');
+        link.href = filePath;
+        link.download = fileName;
+        
+        // Trigger the download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+});
 
 
     </script>
