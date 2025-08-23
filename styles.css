@@ -1033,6 +1033,56 @@ footer .copyright i {
 }
 
 
+.funtext-floating {
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  z-index: 2;
+  animation: float 2.8s ease-in-out infinite;
+  max-width: 90vw;
+}
+
+.funtext-floating span {
+  color: #00ff11;
+  font-family: monospace;
+  font-size: 1.3rem;
+  text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc;
+  background: rgba(20, 20, 40, 0.6);
+  padding: 8px 18px;
+  border-radius: 12px;
+  font-weight: bold;
+  word-break: break-word;
+  display: inline-block;
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+  .funtext-floating {
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .funtext-floating span {
+    font-size: 1.1rem;
+    padding: 7px 12px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .funtext-floating {
+    top: 88%;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 90vw;
+    text-align: center;
+  }
+  .funtext-floating span {
+    font-size: 0.95rem;
+    padding: 6px 8px;
+  }
+}
+
 
 
 
