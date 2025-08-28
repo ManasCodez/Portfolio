@@ -279,6 +279,17 @@
             box-shadow: 0 0 15px #00f7ff;
         }
 
+
+        /*for c++*/
+
+        
+
+
+
+
+
+
+
         .sketchfab-container {
             width: 100%;
             max-width: 800px;
@@ -579,7 +590,7 @@
   
   animation: float 4s ease-in-out infinite;
 }
-.pythonfloating-icons img {
+.leetcodefloating-icons img {
   position: absolute;
   width: 120px;
   top : 70%;
@@ -603,7 +614,7 @@
           drop-shadow(0 0 10px rgb(0, 208, 255))
           drop-shadow(0 0 15px rgb(0, 255, 17));
 }
-.pyglow {
+.leetcodeglow {
     width: 5px;
     filter: drop-shadow(0 0 5px rgb(255, 0, 183))
           drop-shadow(0 0 10px rgb(179, 0, 255))
@@ -990,7 +1001,7 @@ footer .copyright i {
   left: 80%;
   animation: float 4s ease-in-out infinite;
 }
-.pythonfloating-icons img {
+.leetcodefloating-icons img {
   position: absolute;
   width: 120px;
   top : 70%;
@@ -1014,7 +1025,7 @@ footer .copyright i {
           drop-shadow(0 0 10px rgb(0, 208, 255))
           drop-shadow(0 0 15px rgb(0, 255, 17));
 }
-.pyglow {
+.leetcodeglow {
     width: 5px;
     filter: drop-shadow(0 0 5px rgb(255, 0, 183))
           drop-shadow(0 0 10px rgb(179, 0, 255))
@@ -1106,7 +1117,7 @@ h5 { font-size: 2.5rem; }
 .hero-content h1 { font-size: 1.6rem; }
 .hero-content p { font-size: 1rem; }
 .cube-container { width: 100px; height: 100px; margin: 20px auto; }
-.cppfloating-icons img, .pythonfloating-icons img, .codefloating-icons img { width: 80px; opacity: 0.7; }
+.cppfloating-icons img, .leetcodefloating-icons img, .codefloating-icons img { width: 80px; opacity: 0.7; }
 .projects, .hobbies, .qualifications, .contact { padding: 40px 20px; }
 }
 @media (max-width: 400px) {
