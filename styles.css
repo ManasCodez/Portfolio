@@ -21,7 +21,7 @@
             
         }
         h5{ 
-            font-size: 3.2rem;
+            font-size: 3.8rem;
             font-family: "Aladin", system-ui;
             text-shadow: 0 0 15px #9c07c9;
             letter-spacing: 3px;
@@ -105,7 +105,7 @@
 
         .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 35px;
         }
 
         .nav-links a {
